@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #333;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: rgb(32, 22, 214);
+}
+
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: rgb(251, 250, 240);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.DOI {
+    color: rgba(0, 3, 26, 0.498) 
+}
+
+ /* general end & header start */
+
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px 0 120px;
+  background-color: rgb(233, 250, 252);
+}
+
+.header-left {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: black;
+    gap: 30px;
+   
+}
+
+.header-img-left {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  object-fit: cover;
+  mix-blend-mode: multiply; /* to remove the background white color */
+} 
+
+.header-img-right {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+
+.header-right {
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: white;
+}
+
+.header-right-active {
+    font-size: 18px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 2px solid #0e08cf;
+    font-weight: bold;
+}
+
+/* header end & Home start */
+
+#about {
+  margin-top: 120px; /* adjust based on header height */
+}
+.slider {
+  position: relative;
+  width: 100%;          /* Full width */
+  max-height: 670px;     /* Optional: prevent super-tall image */
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+
+/* When fading out */
+.slider.out {
+  opacity: 0;
+}
+
+
+#slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.arrow.left {
+  left: 10px;  /* sticks to left edge */
+}
+
+.arrow.right {
+  right: 10px; /* sticks to right edge */
+}
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots span {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  display: inline-block;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background-color: #333;
+}
+
+
+/* Home end & XX start */
+
+#about {
+  margin-top: 120px; /* adjust based on header height */
+}
+
+.two-column {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.statement {
+  flex: 0 0 70%; /* 30% of the container */
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.Documents {
+    color: rgba(0, 3, 26, 0.498) 
+    
+}
+
+ /* general end & header start */
+
+
+.profile-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+h2 {
+  font-size: 32px;
+  color: #2b5876;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.4rem;
+}
+
+
+ul, ol {
+    padding: 10px 0;
+   font-size: 18px;
+   line-height: 1.8;
+   margin-left: 20px;
+}
+
+
+
+#contact p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.linkedin-link {
+  margin-left: 20px;
+}
+
+.linkedin-link i {
+  font-size: 50px; /* adjust size here (try 100 or 120) */
+  color: #0077b5;
+  vertical-align: middle;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.linkedin-link:hover i {
+  color: #005582;
+  transform: scale(1.1);
+}
+
+/* Optional: if you want to center the whole line */
+.linkedin-text {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Profile end & Publication start */
+
+#publications {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+
+#publications li {
+font-size: 24px;
+border-bottom: 2px solid #ddd;
+padding-bottom: 0.4rem;
+list-style-position: inside;  /* ✅ This moves the number inside the box */
+}
+
+#publications p {
+ line-height: 1.2;
+
+}
+
+.TOC {
+  display: block;
+  margin: 40px auto;     /* Centers the image horizontally */
+  width: 400px;          /* Adjust this to your preferred width */
+  height: auto;          /* Maintains aspect ratio */
+  object-fit: contain;   /* Prevents distortion */
+}
+
+
+/* XX end & footer start */
+
+footer {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px 20px 120px;
+  background-color: rgb(233, 250, 252);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /
+}
+
+.footer-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
